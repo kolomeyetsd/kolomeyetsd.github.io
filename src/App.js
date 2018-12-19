@@ -35,18 +35,18 @@ export default class App extends Component {
           </div>
           <div className="description-side">
             <Route
-              path="/:id*"
-              render={props => (
-                <Description
-                  model={this.state.tags.find(tag => tag.id === props.match.params.id)}
-                />
-              )}
-            />
-            <Route
               path="/"
               exact={true}
               render={props => (
                 <span>no selected tag</span>
+              )}
+            />
+            <Route
+              path="/:id+"
+              render={props => (
+                <Description
+                  model={this.state.tags.find(tag => tag.id === props.match.params.id)}
+                />
               )}
             />
           </div>
