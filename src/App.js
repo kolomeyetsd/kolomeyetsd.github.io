@@ -6,77 +6,63 @@ import data from './data.json'
 
 const BASE_FONT_SIZE = 10
 const ADD_FONT_SIZE = 25
-const SENTIMENT_TYPES = ['positive', 'negative', 'neutral']
 
 
-export default class App extends Component {
-
-  constructor (props) {
-    super(props)
-
-    this.state = {
-      tags: data,
-      maxSentiment: Math.max(...data.map(tag => tag.sentimentScore))
-    }
-  }
-
-  render () {
-    return (
-      <HashRouter hashType="noslash">
-        <div className="app">
-          <div className="tags-side">
-            {this.state.tags.map(tag => (
-              <Tag
-                key={tag.id}
-                model={tag}
-                maxSentiment={this.state.maxSentiment}
-              />
-            ))}
-          </div>
-          <div className="description-side">
-            <Route
-              path="/"
-              exact={true}
-              render={props => (
-                <span>no selected tag</span>
-              )}
-            />
-            <Route
-              path="/:id+"
-              render={props => (
-                <Description
-                  model={this.state.tags.find(tag => tag.id === props.match.params.id)}
-                />
-              )}
-            />
-          </div>
-        </div>
-      </HashRouter>
-    )
-  }
-}
-
-const Tag = props => {
-  const fontSize = BASE_FONT_SIZE + Math.round(props.model.sentimentScore / props.maxSentiment * ADD_FONT_SIZE)
+const App = props => {
+  const { tags, maxSentiment } = props
 
   return (
-    <NavLink
-      activeClassName="tag-active"
-      className="tag"
-      to={`/${props.model.id}`}
-      style={{ fontSize }}>
+    <HashRouter hashType="noslash">
+      <div className="app">
+        <div className="tags-side">
+          {tags.map(tag => (
+            <Tag
+              key={tag.id}
+              model={tag}
+              maxSentiment={maxSentiment}
+            />
+          ))}
+        </div>
+        <div className="description-side">
+          <Route
+            path="/"
+            exact={true}
+            render={props => (
+              <span>no selected tag</span>
+            )}
+          />
+          <Route
+            path="/:id+"
+            render={props => (
+              <Description model={tags.find(tag => tag.id === props.match.params.id)} />
+            )}
+          />
+        </div>
+      </div>
+    </HashRouter>
+  )
+}
+
+
+const Tag = props => {
+  const { model, maxSentiment } = props
+  const fontSize = BASE_FONT_SIZE + Math.round(model.sentimentScore / maxSentiment * ADD_FONT_SIZE)
+
+  return (
+    <NavLink activeClassName="tag-active" className="tag" to={`/${model.id}`} style={{ fontSize }}>
       {props.model.label}
     </NavLink>
   )
 }
 
 
-
-
 const Description = props => {
   const { model } = props
 
-  const totalMentions = SENTIMENT_TYPES.reduce((total, type) => model.sentiment[type] || 0, 0)
+  const totalMentions = Object
+    .entries(model.sentiment)
+    .reduce((total, [ key, val ]) => total + val, 0)
+
   const pageTypes = Object
     .entries(model.pageType)
     .filter(([ key, val ]) => val > 0)
@@ -113,3 +99,11 @@ const Description = props => {
     </div>
   )
 }
+
+
+export default props => (
+  <App
+    tags={data}
+    maxSentiment={Math.max(...data.map(tag => tag.sentimentScore))}
+  />
+)
