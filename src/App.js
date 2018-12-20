@@ -33,9 +33,17 @@ const App = props => {
           />
           <Route
             path="/:id+"
-            render={props => (
-              <Description model={tags.find(tag => tag.id === props.match.params.id)} />
-            )}
+            render={props => {
+              const tag = tags.find(tag => tag.id === props.match.params.id)
+
+              if (!tag) return (
+                <span>tag not found</span>
+              )
+
+              return (
+                <Description model={tag} />
+              )
+            }}
           />
         </div>
       </div>
@@ -73,18 +81,10 @@ const Description = props => {
     <div className="description">
       <span className="label">{model.label}</span>
       <ul>
-        <li>
-          {`total mentions: ${totalMentions}`}
-        </li>
-        <li>
-          {`positive mentions: ${model.sentiment.positive || 'none'}`}
-        </li>
-        <li>
-          {`neutral mentions: ${model.sentiment.neutral || 'none'}`}
-        </li>
-        <li>
-          {`negative mentions: ${model.sentiment.negative || 'none'}`}
-        </li>
+        <li>{`total mentions: ${totalMentions}`}</li>
+        <li>{`positive mentions: ${model.sentiment.positive || 'none'}`}</li>
+        <li>{`neutral mentions: ${model.sentiment.neutral || 'none'}`}</li>
+        <li>{`negative mentions: ${model.sentiment.negative || 'none'}`}</li>
         <li>
           <span>page types</span>
           <ul>
