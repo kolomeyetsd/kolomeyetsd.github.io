@@ -6,7 +6,7 @@ const webpack = require('webpack')
 module.exports = {
   entry: __dirname + '/src/index',
   output: {
-    path: __dirname + '/public/dist',
+    path: __dirname + '/public/',
     publicPath: '/public/',
     filename: 'build.js',
   },
