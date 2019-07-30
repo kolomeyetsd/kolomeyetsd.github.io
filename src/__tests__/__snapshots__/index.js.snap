@@ -1,0 +1,602 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test just one render case should render app tree 1`] = `
+Array [
+  <div
+    className="desk"
+  >
+    <div
+      className="square white"
+      onMouseOver={[Function]}
+    >
+      <svg
+        className="piece no-user-drag"
+        onMouseDown={[Function]}
+        style={Object {}}
+      >
+        <use
+          xlinkHref="/public/chess-sprite.svg#white-rook"
+        />
+      </svg>
+    </div>
+    <div
+      className="square black"
+      onMouseOver={[Function]}
+    >
+      <svg
+        className="piece no-user-drag"
+        onMouseDown={[Function]}
+        style={Object {}}
+      >
+        <use
+          xlinkHref="/public/chess-sprite.svg#white-knight"
+        />
+      </svg>
+    </div>
+    <div
+      className="square white"
+      onMouseOver={[Function]}
+    >
+      <svg
+        className="piece no-user-drag"
+        onMouseDown={[Function]}
+        style={Object {}}
+      >
+        <use
+          xlinkHref="/public/chess-sprite.svg#white-bishop"
+        />
+      </svg>
+    </div>
+    <div
+      className="square black"
+      onMouseOver={[Function]}
+    >
+      <svg
+        className="piece no-user-drag"
+        onMouseDown={[Function]}
+        style={Object {}}
+      >
+        <use
+          xlinkHref="/public/chess-sprite.svg#white-king"
+        />
+      </svg>
+    </div>
+    <div
+      className="square white"
+      onMouseOver={[Function]}
+    >
+      <svg
+        className="piece no-user-drag"
+        onMouseDown={[Function]}
+        style={Object {}}
+      >
+        <use
+          xlinkHref="/public/chess-sprite.svg#white-queen"
+        />
+      </svg>
+    </div>
+    <div
+      className="square black"
+      onMouseOver={[Function]}
+    >
+      <svg
+        className="piece no-user-drag"
+        onMouseDown={[Function]}
+        style={Object {}}
+      >
+        <use
+          xlinkHref="/public/chess-sprite.svg#white-bishop"
+        />
+      </svg>
+    </div>
+    <div
+      className="square white"
+      onMouseOver={[Function]}
+    >
+      <svg
+        className="piece no-user-drag"
+        onMouseDown={[Function]}
+        style={Object {}}
+      >
+        <use
+          xlinkHref="/public/chess-sprite.svg#white-knight"
+        />
+      </svg>
+    </div>
+    <div
+      className="square black"
+      onMouseOver={[Function]}
+    >
+      <svg
+        className="piece no-user-drag"
+        onMouseDown={[Function]}
+        style={Object {}}
+      >
+        <use
+          xlinkHref="/public/chess-sprite.svg#white-rook"
+        />
+      </svg>
+    </div>
+    <div
+      className="square black"
+      onMouseOver={[Function]}
+    >
+      <svg
+        className="piece no-user-drag"
+        onMouseDown={[Function]}
+        style={Object {}}
+      >
+        <use
+          xlinkHref="/public/chess-sprite.svg#white-pawn"
+        />
+      </svg>
+    </div>
+    <div
+      className="square white"
+      onMouseOver={[Function]}
+    >
+      <svg
+        className="piece no-user-drag"
+        onMouseDown={[Function]}
+        style={Object {}}
+      >
+        <use
+          xlinkHref="/public/chess-sprite.svg#white-pawn"
+        />
+      </svg>
+    </div>
+    <div
+      className="square black"
+      onMouseOver={[Function]}
+    >
+      <svg
+        className="piece no-user-drag"
+        onMouseDown={[Function]}
+        style={Object {}}
+      >
+        <use
+          xlinkHref="/public/chess-sprite.svg#white-pawn"
+        />
+      </svg>
+    </div>
+    <div
+      className="square white"
+      onMouseOver={[Function]}
+    >
+      <svg
+        className="piece no-user-drag"
+        onMouseDown={[Function]}
+        style={Object {}}
+      >
+        <use
+          xlinkHref="/public/chess-sprite.svg#white-pawn"
+        />
+      </svg>
+    </div>
+    <div
+      className="square black"
+      onMouseOver={[Function]}
+    >
+      <svg
+        className="piece no-user-drag"
+        onMouseDown={[Function]}
+        style={Object {}}
+      >
+        <use
+          xlinkHref="/public/chess-sprite.svg#white-pawn"
+        />
+      </svg>
+    </div>
+    <div
+      className="square white"
+      onMouseOver={[Function]}
+    >
+      <svg
+        className="piece no-user-drag"
+        onMouseDown={[Function]}
+        style={Object {}}
+      >
+        <use
+          xlinkHref="/public/chess-sprite.svg#white-pawn"
+        />
+      </svg>
+    </div>
+    <div
+      className="square black"
+      onMouseOver={[Function]}
+    >
+      <svg
+        className="piece no-user-drag"
+        onMouseDown={[Function]}
+        style={Object {}}
+      >
+        <use
+          xlinkHref="/public/chess-sprite.svg#white-pawn"
+        />
+      </svg>
+    </div>
+    <div
+      className="square white"
+      onMouseOver={[Function]}
+    >
+      <svg
+        className="piece no-user-drag"
+        onMouseDown={[Function]}
+        style={Object {}}
+      >
+        <use
+          xlinkHref="/public/chess-sprite.svg#white-pawn"
+        />
+      </svg>
+    </div>
+    <div
+      className="square white"
+      onMouseOver={[Function]}
+    />
+    <div
+      className="square black"
+      onMouseOver={[Function]}
+    />
+    <div
+      className="square white"
+      onMouseOver={[Function]}
+    />
+    <div
+      className="square black"
+      onMouseOver={[Function]}
+    />
+    <div
+      className="square white"
+      onMouseOver={[Function]}
+    />
+    <div
+      className="square black"
+      onMouseOver={[Function]}
+    />
+    <div
+      className="square white"
+      onMouseOver={[Function]}
+    />
+    <div
+      className="square black"
+      onMouseOver={[Function]}
+    />
+    <div
+      className="square black"
+      onMouseOver={[Function]}
+    />
+    <div
+      className="square white"
+      onMouseOver={[Function]}
+    />
+    <div
+      className="square black"
+      onMouseOver={[Function]}
+    />
+    <div
+      className="square white"
+      onMouseOver={[Function]}
+    />
+    <div
+      className="square black"
+      onMouseOver={[Function]}
+    />
+    <div
+      className="square white"
+      onMouseOver={[Function]}
+    />
+    <div
+      className="square black"
+      onMouseOver={[Function]}
+    />
+    <div
+      className="square white"
+      onMouseOver={[Function]}
+    />
+    <div
+      className="square white"
+      onMouseOver={[Function]}
+    />
+    <div
+      className="square black"
+      onMouseOver={[Function]}
+    />
+    <div
+      className="square white"
+      onMouseOver={[Function]}
+    />
+    <div
+      className="square black"
+      onMouseOver={[Function]}
+    />
+    <div
+      className="square white"
+      onMouseOver={[Function]}
+    />
+    <div
+      className="square black"
+      onMouseOver={[Function]}
+    />
+    <div
+      className="square white"
+      onMouseOver={[Function]}
+    />
+    <div
+      className="square black"
+      onMouseOver={[Function]}
+    />
+    <div
+      className="square black"
+      onMouseOver={[Function]}
+    />
+    <div
+      className="square white"
+      onMouseOver={[Function]}
+    />
+    <div
+      className="square black"
+      onMouseOver={[Function]}
+    />
+    <div
+      className="square white"
+      onMouseOver={[Function]}
+    />
+    <div
+      className="square black"
+      onMouseOver={[Function]}
+    />
+    <div
+      className="square white"
+      onMouseOver={[Function]}
+    />
+    <div
+      className="square black"
+      onMouseOver={[Function]}
+    />
+    <div
+      className="square white"
+      onMouseOver={[Function]}
+    />
+    <div
+      className="square white"
+      onMouseOver={[Function]}
+    >
+      <svg
+        className="piece"
+        onMouseDown={[Function]}
+        style={Object {}}
+      >
+        <use
+          xlinkHref="/public/chess-sprite.svg#black-pawn"
+        />
+      </svg>
+    </div>
+    <div
+      className="square black"
+      onMouseOver={[Function]}
+    >
+      <svg
+        className="piece"
+        onMouseDown={[Function]}
+        style={Object {}}
+      >
+        <use
+          xlinkHref="/public/chess-sprite.svg#black-pawn"
+        />
+      </svg>
+    </div>
+    <div
+      className="square white"
+      onMouseOver={[Function]}
+    >
+      <svg
+        className="piece"
+        onMouseDown={[Function]}
+        style={Object {}}
+      >
+        <use
+          xlinkHref="/public/chess-sprite.svg#black-pawn"
+        />
+      </svg>
+    </div>
+    <div
+      className="square black"
+      onMouseOver={[Function]}
+    >
+      <svg
+        className="piece"
+        onMouseDown={[Function]}
+        style={Object {}}
+      >
+        <use
+          xlinkHref="/public/chess-sprite.svg#black-pawn"
+        />
+      </svg>
+    </div>
+    <div
+      className="square white"
+      onMouseOver={[Function]}
+    >
+      <svg
+        className="piece"
+        onMouseDown={[Function]}
+        style={Object {}}
+      >
+        <use
+          xlinkHref="/public/chess-sprite.svg#black-pawn"
+        />
+      </svg>
+    </div>
+    <div
+      className="square black"
+      onMouseOver={[Function]}
+    >
+      <svg
+        className="piece"
+        onMouseDown={[Function]}
+        style={Object {}}
+      >
+        <use
+          xlinkHref="/public/chess-sprite.svg#black-pawn"
+        />
+      </svg>
+    </div>
+    <div
+      className="square white"
+      onMouseOver={[Function]}
+    >
+      <svg
+        className="piece"
+        onMouseDown={[Function]}
+        style={Object {}}
+      >
+        <use
+          xlinkHref="/public/chess-sprite.svg#black-pawn"
+        />
+      </svg>
+    </div>
+    <div
+      className="square black"
+      onMouseOver={[Function]}
+    >
+      <svg
+        className="piece"
+        onMouseDown={[Function]}
+        style={Object {}}
+      >
+        <use
+          xlinkHref="/public/chess-sprite.svg#black-pawn"
+        />
+      </svg>
+    </div>
+    <div
+      className="square black"
+      onMouseOver={[Function]}
+    >
+      <svg
+        className="piece"
+        onMouseDown={[Function]}
+        style={Object {}}
+      >
+        <use
+          xlinkHref="/public/chess-sprite.svg#black-rook"
+        />
+      </svg>
+    </div>
+    <div
+      className="square white"
+      onMouseOver={[Function]}
+    >
+      <svg
+        className="piece"
+        onMouseDown={[Function]}
+        style={Object {}}
+      >
+        <use
+          xlinkHref="/public/chess-sprite.svg#black-knight"
+        />
+      </svg>
+    </div>
+    <div
+      className="square black"
+      onMouseOver={[Function]}
+    >
+      <svg
+        className="piece"
+        onMouseDown={[Function]}
+        style={Object {}}
+      >
+        <use
+          xlinkHref="/public/chess-sprite.svg#black-bishop"
+        />
+      </svg>
+    </div>
+    <div
+      className="square white"
+      onMouseOver={[Function]}
+    >
+      <svg
+        className="piece"
+        onMouseDown={[Function]}
+        style={Object {}}
+      >
+        <use
+          xlinkHref="/public/chess-sprite.svg#black-king"
+        />
+      </svg>
+    </div>
+    <div
+      className="square black"
+      onMouseOver={[Function]}
+    >
+      <svg
+        className="piece"
+        onMouseDown={[Function]}
+        style={Object {}}
+      >
+        <use
+          xlinkHref="/public/chess-sprite.svg#black-queen"
+        />
+      </svg>
+    </div>
+    <div
+      className="square white"
+      onMouseOver={[Function]}
+    >
+      <svg
+        className="piece"
+        onMouseDown={[Function]}
+        style={Object {}}
+      >
+        <use
+          xlinkHref="/public/chess-sprite.svg#black-bishop"
+        />
+      </svg>
+    </div>
+    <div
+      className="square black"
+      onMouseOver={[Function]}
+    >
+      <svg
+        className="piece"
+        onMouseDown={[Function]}
+        style={Object {}}
+      >
+        <use
+          xlinkHref="/public/chess-sprite.svg#black-knight"
+        />
+      </svg>
+    </div>
+    <div
+      className="square white"
+      onMouseOver={[Function]}
+    >
+      <svg
+        className="piece"
+        onMouseDown={[Function]}
+        style={Object {}}
+      >
+        <use
+          xlinkHref="/public/chess-sprite.svg#black-rook"
+        />
+      </svg>
+    </div>
+  </div>,
+  <div
+    className="app-tools"
+  >
+    <span>
+      Turn color: black
+    </span>
+    <span>
+      save
+    </span>
+    <span>
+      load
+    </span>
+    <span>
+      reset
+    </span>
+  </div>,
+]
+`;

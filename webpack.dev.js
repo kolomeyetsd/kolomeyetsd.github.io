@@ -6,7 +6,7 @@ const webpack = require('webpack')
 module.exports = {
   entry: __dirname + '/src/index',
   output: {
-    path: __dirname + '/public/',
+    path: __dirname + '/public/dist',
     publicPath: '/public/',
     filename: 'build.js',
   },
@@ -16,8 +16,8 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.css/,
-        loader: 'style-loader!css-loader'
+        test: /\.less$/,
+        loader: 'style-loader!css-loader!less-loader'
       },
       {
         test: /\.jsx|js?$/,

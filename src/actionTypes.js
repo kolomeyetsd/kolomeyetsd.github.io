@@ -1,0 +1,6 @@
+//
+export const STATE_RESET = 'STATE_RESET'
+export const STATE_LOADED = 'STATE_LOADED'
+export const PIECE_DRAG_STARTED = 'PIECE_DRAG_STARTED'
+export const SQUARE_DRAG_OVER = 'SQUARE_DRAG_OVER'
+export const PIECE_DROPPED = 'PIECE_DROPPED'

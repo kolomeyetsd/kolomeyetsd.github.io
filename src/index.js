@@ -2,8 +2,8 @@
 import React from 'react'
 import { render } from 'react-dom'
 
-import App from './App'
-import style from './style.css'
+import './style.less'
+import { App } from './components/App'
 
 
 document.addEventListener('DOMContentLoaded', () => {
